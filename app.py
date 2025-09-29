@@ -59,7 +59,12 @@ def eliminar_tarea_endpoint(tarea_id):
     services.eliminar(tarea_id)
     return jsonify({"mensaje": "Tarea eliminada exitosamente"}), 200
 
+from database import create_table
+print("Verificando y creando tabla si es necesario...")
+create_table()
+print("Tabla 'tareas' lista.")
+
+
 if __name__ == '__main__':
-    from database import create_table
-    create_table()
+    # Esto solo se usará para desarrollo local
     app.run(debug=True)
