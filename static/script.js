@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listaTareas = document.getElementById('lista-tareas');
 
     // --- URL de nuestra API ---
-    const API_URL = 'http://127.0.0.1:5000/tareas';
+const API_URL = '/tareas';
 
     // --- FUNCIÓN PARA OBTENER Y MOSTRAR TODAS LAS TAREAS ---
     async function obtenerYMostrarTareas() {
